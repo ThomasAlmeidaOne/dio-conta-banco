@@ -5,7 +5,7 @@ public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         //TODO:Conhecer e importar a classe Scanner
         Scanner teclado = new Scanner(System.in);
-        Integer numero;
+        int numeroConta;
         String agencia;
         String nomeCliente;
         double saldo;
@@ -20,15 +20,15 @@ public class ContaTerminal {
         agencia = teclado.nextLine().replaceAll("[^\\d]", "").replaceAll("...", "$0-");
     
         System.out.println("--------------------");
-        System.out.println("Digite o Numero: ");
-        numero = teclado.nextInt();
+        System.out.println("Digite a numeraçao da sua conta: ");
+        numeroConta = teclado.nextInt();
         System.out.println("--------------------");
         System.out.println("Digite o seu saldo: ");
         saldo = teclado.nextDouble();
         teclado.close();
 
         //Exibir a mensagem conta criada 
-        System.out.printf("Olá ".concat(nomeCliente)+", obrigado por criar uma conta em nosso banco. Sua agência é ".concat(agencia)+", conta %d e seu saldo é %.2f",numero,saldo);
+        System.out.printf("Olá ".concat(nomeCliente)+", obrigado por criar uma conta em nosso banco. Sua agência é ".concat(agencia)+", conta %d e seu saldo é %.2f",numeroConta,saldo);
     }
 }
 
