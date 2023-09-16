@@ -9,9 +9,8 @@ public class ContaTerminal {
         String agencia;
         String nomeCliente;
         double saldo;
-           boolean validacao = false;
-        //Exibir as mensagens para o nosso usuário
 
+        //Exibir as mensagens para o nosso usuário
         System.out.println("Olá seja bem-vindo !");
         System.out.println("Digite o Seu nome: ");
         nomeCliente = teclado.nextLine();
@@ -27,8 +26,9 @@ public class ContaTerminal {
         System.out.println("Digite o seu saldo: ");
         saldo = teclado.nextDouble();
         teclado.close();
+
         //Exibir a mensagem conta criada 
-        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco. Sua agência é %s, conta %d e seu saldo é %.2f",nomeCliente,agencia,numero,saldo);
+        System.out.printf("Olá ".concat(nomeCliente)+", obrigado por criar uma conta em nosso banco. Sua agência é ".concat(agencia)+", conta %d e seu saldo é %.2f",numero,saldo);
     }
 }
 

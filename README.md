@@ -51,4 +51,3 @@ Contribuições são bem-vindas! Se você quiser melhorar este projeto, adiciona
 1. Crie um fork deste repositório.
 2. Faça as alterações desejadas em seu próprio fork.
 3. Envie um pull request com suas alterações.
->>>>>>> 9f80e43a393c0efb91827dadd7f191c97666c266
